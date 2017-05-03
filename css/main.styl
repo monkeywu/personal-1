@@ -1,0 +1,350 @@
+li 
+	margin 0
+	list-style none
+ul
+	margin 0
+	padding 0
+a 
+	color black
+	transition all 0.4s
+	&:hover
+		text-decoration none
+.slides>div
+	padding 50px 0
+.slides #slide1
+	padding 0
+.title
+		text-align center
+		margin 50px 0
+		.subtitle
+				margin 0 auto
+				background-color #cccccc
+				color #fff
+				border-radius 100%
+				width 80px
+				height 80px
+				line-height 80px
+				font-size 36px
+		.subtitle-1
+			font-size 4rem
+			letter-spacing 2px
+			font-weight 700
+			color #121212
+			span
+				padding 0 10px
+				background-color rgba(59,63,80,0.6)
+				color #fff
+				border-radius 6px
+#header
+	position fixed
+	top 0
+	width 100%
+	background #efefef
+	z-index 2
+	.navbar
+		margin 0
+		.container
+			height 80px
+			position relative
+			.logo
+				float left
+				margin-left 50px
+				a
+					display block
+					img
+						max-height 80px
+						width auto
+			.nav
+				float right
+				position relative
+				top 50%
+				transform translateY(-50%)
+				li
+					float left
+					a
+						margin-left 15px
+						padding 10px
+						font-size 16px
+						&:hover
+							color #fff
+					.border
+						border 1px solid black
+						border-radius 10px
+						&:hover
+							color #fff
+							background #111
+.hamburger {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform translateY(-50%)
+  z-index: 10;
+  
+  .hamburger-span {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #111;
+    border-radius: 1px;
+    transition: 0.6s;
+  }
+  
+  .hamburger-span:nth-child(2){
+    top: 10px;
+  }
+  
+  .hamburger-span:nth-child(3){
+    top: 10px;
+  }
+  
+  .hamburger-span:nth-child(4){
+    top: 20px;
+  }
+}
+
+.open {
+  
+  .hamburger-span{
+    background: #111; 
+    transition: 0.6s;
+  }
+  
+  .hamburger-span:nth-child(1) {
+    transform: translateY(45px);
+    opacity: 0;
+  }
+  
+  .hamburger-span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  
+  .hamburger-span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburger-span:nth-child(4) {
+    transform: translateY(-45px);
+    opacity: 0;
+  }
+}
+#slide1
+	background url('../image/bg1.jpg') no-repeat center center 
+	background-size cover
+	height 662px
+	.header
+		text-align center
+		color #fff
+		position relative
+		top 50%
+		transform translateY(-50%)
+		.head-title
+			display none
+		h2
+			font-size 4rem
+		h1
+			font-size 5rem
+#slide2
+	color #666666
+	.intro-photo
+		text-align center
+		.photo
+			width 200px
+			height 200px
+			margin-top 20px
+			background url('../image/2.jpg') no-repeat center center 
+			background-size cover
+			border 1px solid #111
+			border-radius 99em
+			display inline-block
+	.intro
+		margin-top 20px
+		p
+			font-size 1.5rem
+			line-height 1.8em
+			margin-top 20px
+	.detail
+		position relative
+		font-size 5rem
+		text-align center
+		height 100px
+		margin-top 50px
+		.cover
+			position absolute
+			top 0
+			left 0
+			height 100%
+			width 100%
+			font-size 0.3rem
+			text-align center
+			opacity 0
+			transition all 0.4s
+			&:hover
+				opacity 1
+				background-color rgba(0,0,0,0.3)
+				color #fff
+			span
+				line-height 100px
+				a 
+					color #fff
+					&:hover
+						color #111	
+#slide3
+	background #efefef 
+	.work
+		margin 30px 0
+		.col-sm-4
+			position relative
+			img
+				height 100%
+				width 100%
+			.cover
+				position absolute
+				top 0
+				left 0
+				height 100%
+				width 100%
+				text-align center
+				opacity 0
+				transition all 0.4s
+				&:hover
+					opacity 1
+					background-color rgba(0,0,0,0.3)
+					color #fff
+				.desk
+					position relative
+					top 50%
+					transform translateY(-50%)
+					h1
+						font-size 20px
+				a
+					font-size 35px
+					color #fff
+					&:hover
+						color #111
+	h2
+		font-size 50px
+		text-align center
+		letter-spacing 1px
+		font-weight 700
+		margin-top 50px
+#slide4
+	background url('../image/bg4.jpg') no-repeat center center fixed
+	background-size cover
+	color #fff
+	text-align center
+	h1
+		font-size 3rem
+	div
+		width 80%
+		margin 0 auto
+		p
+			font-size 1rem
+#slide5
+	background #9199ad 
+	.col-sm-3
+		text-align center
+		h1
+			width 100px
+			height 100px
+			line-height 100px
+			border 1px solid #111
+			border-radius 100%
+			margin 0 auto
+		p 
+			margin-top 20px
+	.col-sm-4
+		margin 30px 0
+		text-align center
+		.progress
+			position relative
+			background-color #ccc
+			margin 0
+			color #fff
+			text-align left
+			height 40px
+			span
+				position relative
+				z-index 1
+				line-height 40px
+			.bar
+				position absolute
+				top 0
+				background-color rgba(59,63,80,0.6)
+				height 100%
+				width 0%
+				border-radius 0 40px 40px 0
+				transition all 2s
+#slide6
+	background  #efefef
+	.locate
+		font-size 36px
+		text-align center
+		margin 10px 0
+	.map
+		text-align center
+	.social
+		margin-top 50px
+		text-align center
+		a
+			display inline-block
+			font-size 3rem
+			color #efefef
+			background-color rgba(59,63,80,0.6)
+			padding 0 10px
+			margin 0 10px
+			border-radius 20px
+			&:hover
+				color #111
+			i
+				display inline-block
+.footer
+	background-color #9199ad
+	padding 20px 0
+	.container
+		text-align center
+		.logo
+			width 80px
+			height 80px
+			margin 0 auto
+			img 
+				width 100%
+				height auto
+		span
+			font-size 16px
+@media (min-width:320px)
+	.header
+		max-width 100%
+	.hamburger 
+		display inline-block
+	.nav
+		display none
+	#header .navbar .container .logo
+		margin-left 10px  
+	.full-nav
+		max-width 100%
+		height 662px
+		position relative
+		z-index 5
+		background-color #fff
+		display none
+		ul
+			margin-top 70px
+			li
+				font-size 3rem
+				padding-bottom 10px
+				border-bottom 2px solid
+				&:nth-child(even)
+					text-align right
+	#slide3
+		.col-sm-4
+			margin-top 20px	
+	#slide6 .social a
+		margin 10px
+@media (min-width:530px)
+	.hamburger
+		display none
+	.nav 
+		display block
+	
