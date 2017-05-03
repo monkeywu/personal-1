@@ -315,6 +315,7 @@ a:hover {
   position: relative;
   z-index: 1;
   line-height: 40px;
+  padding-left: 10px;
 }
 #slide5 .col-sm-4 .progress .bar {
   position: absolute;
